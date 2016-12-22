@@ -48,7 +48,7 @@ class DoubanSpider(BaseSpider):
             movie_image_name = result[i]['title']
             movie_image_src = result[i]['cover']
             image_name = "%s.jpg" % movie_image_name
-            image_path = os.path.join("E:\movie_best\\tutor_douban\pics", image_name)
+            image_path = os.path.join("E:\movie_pics", image_name)
             urllib.urlretrieve(movie_image_src, image_path)
             yield Request(movie_link, callback=self.parse_item)
 
