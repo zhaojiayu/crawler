@@ -15,7 +15,7 @@ import json
 class DoubanSpider(BaseSpider):
     name = "douban"  #唯一的命名方式，程序的入口
     allowed_domains = ["movie.douban.com"]
-    start_urls = ["https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&page_limit=20&page_start=300"]
+    start_urls = ["https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&page_limit=20&page_start=480"]
     movie_names_short = []
 #    id_num = 0
     id_obj = tutor_douban.database.DBOperation()
